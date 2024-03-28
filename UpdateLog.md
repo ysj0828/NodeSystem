@@ -1,4 +1,5 @@
 # Update Log
+> [한국어 로그](./UpdateLog_Kor.md)
 
 ### 2024/3/18
 - Create repo
