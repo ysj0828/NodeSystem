@@ -1,4 +1,4 @@
-# Update Log
+# 개발 로그
 > [English Log](./UpdateLog.md)
 
 ### 2024/3/18
