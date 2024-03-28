@@ -2,7 +2,7 @@
 [English ReadMe](./README.md)
 
 
-> ## [개발 로그](./UpdateLog.md)
+> ## [개발 로그](./UpdateLog_Kor.md)
 
 > ## Todo : Create a documentation
 
