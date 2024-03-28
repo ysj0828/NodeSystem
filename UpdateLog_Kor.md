@@ -1,4 +1,5 @@
 # Update Log
+> [English Log](./UpdateLog.md)
 
 ### 2024/3/18
 - 리포지토리 생성
