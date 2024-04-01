@@ -246,7 +246,7 @@ MonoBehaviour:
   entity: {fileID: 0}
   MaxConnections: 0
   iconUnconnected: {fileID: -5166432130525955749, guid: fed44c8d54ad1e37f94d90279e6d23f7, type: 3}
-  iconConnected: {fileID: 3876512272233767631, guid: fed44c8d54ad1e37f94d90279e6d23f7, type: 3}
+  iconConnected: {fileID: 4202938828118557322, guid: fed44c8d54ad1e37f94d90279e6d23f7, type: 3}
   iconColorDefault: {r: 1, g: 1, b: 1, a: 1}
   iconColorHover: {r: 0.2784314, g: 0.9254902, b: 0.90588236, a: 1}
   iconColorSelected: {r: 0.2784314, g: 0.9254902, b: 0.90588236, a: 1}

@@ -189,12 +189,6 @@ public class Node : MonoBehaviour, IClickable, IDraggable, IObject
         imageCurrentIcon.color = iconColorSelected;
 
         m.AddLine(ConnectionLine);
-        // EditorUtil.LogListV2(ConnectionLine.points);
-        print("null? : " + ConnectionLine.points == null);
-        foreach (var a in ConnectionLine.points)
-        {
-            print(a);
-        }
 
         ConnectionLine.width = m.GlobalLineWidth;
         ConnectionLine.defaultColor = m.GlobalDefaultColour;
