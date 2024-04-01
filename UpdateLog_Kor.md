@@ -29,4 +29,23 @@
       
   </details>
 
+### 2024/4/1
+- 이전 오류 수정
+
+  <details>
+    <summary>업데이트</summary>
+    
+    1. 버그 수정
+        - 렌더링된 선이 엉뚱한 위치에서 렌더링
+
+  </details>
   
+  <details>
+    <summary>버그</summary>
+    
+    1. 연결된 선이 렌더링 안되는 이슈
+    2. 노드에서 드래그중일 때 선이 주변 노드에 자동으로 스냅되지 않는 이슈
+
+    ![3-1](https://github.com/ysj0828/NodeSystem/assets/63217600/ba55d38d-23b7-413f-897e-a05b8ce29f52)
+
+  </details>
