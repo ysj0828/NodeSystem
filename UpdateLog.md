@@ -4,8 +4,8 @@
 ### 2024/3/18
 - Create repo
 
-### 2024/3/28
-- Update with a Prototype version v0.0.1
+### 2024/3/28 - v0.0.1
+- Update with a Prototype
 
   <details>
     <summary>Initial Feature</summary>
@@ -30,7 +30,7 @@
   </details>
 
 
-### 2024/4/1
+### 2024/4/1 - v0.0.2
 - Fix a major bug
 
   <details>
