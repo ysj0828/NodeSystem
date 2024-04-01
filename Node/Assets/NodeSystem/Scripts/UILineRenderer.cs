@@ -6,7 +6,7 @@ public class UILineRenderer : Graphic
 {
     Manager nodeManager;
     Canvas canvas;
-    private List<Line> lineList;
+    public List<Line> lineList;
     public List<Line> LineList { get => lineList; }
 
     RectTransform rectTransform;
@@ -51,7 +51,7 @@ public class UILineRenderer : Graphic
         UIVertex[] v = new UIVertex[4];
         for (int i = 0; i < vertices.Length; i++)
         {
-            var vert = UIVertex.simpleVert;
+            UIVertex vert = UIVertex.simpleVert;
             vert.color = _color;
 
             vert.position = vertices[i];
@@ -64,7 +64,7 @@ public class UILineRenderer : Graphic
 
     protected override void OnEnable()
     {
-        lineList = lineList == null ? new List<Line>() : lineList;
+        // lineList = lineList == null ? new List<Line>() : lineList;
         rectTransform = GetComponent<RectTransform>();
         rectScale = rectTransform.localScale.x;
 

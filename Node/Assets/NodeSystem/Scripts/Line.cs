@@ -27,7 +27,6 @@ public class Line
 
     float D2R = Mathf.Deg2Rad * 90f;
 
-
     public Line()
     {
         color = defaultColor;
@@ -97,9 +96,9 @@ public class Line
         System.Tuple<int, float> t = GetPreviousPointELength(pos);
         Vector2 p0 = points[t.Item1];
         Vector2 p1 = points[t.Item1 + 1];
-        float ppDistance = Vector2.Distance(p0, p1);
+        float d = Vector2.Distance(p0, p1);
 
-        Vector2 position = Vector2.Lerp(p0, p1, ((pos * length) - t.Item2) / ppDistance);
+        Vector2 position = Vector2.Lerp(p0, p1, ((pos * length) - t.Item2) / d);
         float angle = Mathf.Atan2(p0.y - p1.y, p0.x - p1.x) + D2R;
 
         return new System.Tuple<Vector2, float>(position, angle);

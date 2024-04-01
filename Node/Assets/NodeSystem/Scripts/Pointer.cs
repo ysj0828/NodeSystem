@@ -69,7 +69,7 @@ public class Pointer : MonoBehaviour
         OnPointerUpLast = OnPointerUpLast ?? new UnityEvent();
 
         // Cursor.visible = false;
-
+        FollowCursor();
         Init();
 
         graphicRaycaster = FindObjectOfType<GraphicRaycaster>();

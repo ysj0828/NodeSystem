@@ -163,6 +163,24 @@ public class Node : MonoBehaviour, IClickable, IDraggable, IObject
 
             ConnectionLine.SetPoints(ConnectionSpline.points);
         }
+
+        else if (m.GlobalLineType == Connection.LineTypeEnum.Z_Shape)
+        {
+            ConnectionLine.SetPoints(new Vector2[]{
+                LinePoints[0],
+                (LinePoints[1] + LinePoints[0])/2,
+                (LinePoints[2] + LinePoints[3])/2,
+                LinePoints[3]
+            });
+        }
+
+        else if (m.GlobalLineType == Connection.LineTypeEnum.Line)
+        {
+            ConnectionLine.SetPoints(new Vector2[]{
+                LinePoints[0],
+                LinePoints[3]
+            });
+        }
     }
 
     public void OnPointerDown()
@@ -171,6 +189,12 @@ public class Node : MonoBehaviour, IClickable, IDraggable, IObject
         imageCurrentIcon.color = iconColorSelected;
 
         m.AddLine(ConnectionLine);
+        // EditorUtil.LogListV2(ConnectionLine.points);
+        print("null? : " + ConnectionLine.points == null);
+        foreach (var a in ConnectionLine.points)
+        {
+            print(a);
+        }
 
         ConnectionLine.width = m.GlobalLineWidth;
         ConnectionLine.defaultColor = m.GlobalDefaultColour;
@@ -187,7 +211,7 @@ public class Node : MonoBehaviour, IClickable, IDraggable, IObject
         entity.NodeManager.RemoveLine(ConnectionLine);
         Manager m = entity.NodeManager;
 
-        m.RemoveLine(ConnectionLine);
+        // m.RemoveLine(ConnectionLine);
 
         closestNode = m.pointer.RaycastClosestNode(this);
 
@@ -249,7 +273,6 @@ public class Node : MonoBehaviour, IClickable, IDraggable, IObject
                     closestNode ? m.MainCam.WorldToScreenPoint(closestNode.ControlPointTranform.position) : pointerPosition,
                     closestNode ? m.MainCam.WorldToScreenPoint(closestNode.transform.position) : pointerPosition };
             }
-            // v1.5 - set the line points on the world space canvas
             else if (m.canvas.renderMode == RenderMode.WorldSpace)
             {
                 return new Vector3[] {
