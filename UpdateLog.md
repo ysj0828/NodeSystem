@@ -4,7 +4,7 @@
 ### 2024/3/18
 - Create repo
 
-### ~2024/3/28
+### 2024/3/28
 - Update with a Prototype version v0.0.1
 
   <details>
@@ -29,4 +29,24 @@
       
   </details>
 
+
+### 2024/4/1
+- Fix a major bug
+
+  <details>
+    <summary>Update</summary>
+    
+    1. Bug fix
+        - Line not being rendered at correct position
+
+  </details>
   
+  <details>
+    <summary>Bugs</summary>
+    
+    1. Connected line not being rendered
+    2. Node OnDrag : line not snapping to a node nearby
+
+    ![3-1](https://github.com/ysj0828/NodeSystem/assets/63217600/ba55d38d-23b7-413f-897e-a05b8ce29f52)
+
+  </details>
