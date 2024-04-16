@@ -88,11 +88,6 @@ public class Manager : MonoBehaviour
 
     public void AddLine(Line line)
     {
-        // print("AddLine");
-        // print(uiLineRenderer);
-        // print(uiLineRenderer.LineList);
-        // print(uiLineRenderer.LineList.Count);
-        // print(uiLineRenderer.LineList.Contains(line));
         if (!uiLineRenderer.LineList.Contains(line))
         {
             uiLineRenderer.LineList.Add(line);
@@ -131,7 +126,7 @@ public class Manager : MonoBehaviour
         n0.ConnectionList.Add(c);
         n1.ConnectionList.Add(c);
 
-        print("AddConnection" + c.line == null);
+        AddLine(c.line);
 
         c.line.width = GlobalLineWidth;
         c.line.defaultColor = GlobalDefaultColour;
