@@ -49,3 +49,25 @@
     ![3-1](https://github.com/ysj0828/NodeSystem/assets/63217600/ba55d38d-23b7-413f-897e-a05b8ce29f52)
 
   </details>
+
+
+### 2024/4/16 - v0.0.3
+- 이전 오류 수정
+
+  <details>
+    <summary>업데이트</summary>
+    
+    1. Bug fix
+        - 연결된 선이 렌더링 안되는 이슈
+
+  </details>
+  
+  <details>
+    <summary>버그</summary>
+    
+    1. 노드에서 드래그중일 때 선이 주변 노드에 자동으로 스냅되지 않는 이슈
+
+    ![4-1](https://github.com/ysj0828/NodeSystem/assets/63217600/123649d7-73c0-4cc9-9e37-3a9785616c78)
+
+
+  </details>
