@@ -50,3 +50,26 @@
     ![3-1](https://github.com/ysj0828/NodeSystem/assets/63217600/ba55d38d-23b7-413f-897e-a05b8ce29f52)
 
   </details>
+
+
+
+### 2024/4/16 - v0.0.3
+- Fix a major bug
+
+  <details>
+    <summary>Update</summary>
+    
+    1. Bug fix
+        - Connected line not being rendered
+
+  </details>
+  
+  <details>
+    <summary>Bugs</summary>
+    
+    1. Node OnDrag : line not snapping to a node nearby
+
+    ![4-1](https://github.com/ysj0828/NodeSystem/assets/63217600/123649d7-73c0-4cc9-9e37-3a9785616c78)
+
+
+  </details>
