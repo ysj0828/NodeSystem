@@ -75,7 +75,7 @@
   </details>
 
 
-### 2024/4/16 - v0.0.3
+### 2024/4/30 - v0.0.4
 - Added a feature : snap to nearest node
 
   <details>
