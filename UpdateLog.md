@@ -73,3 +73,17 @@
 
 
   </details>
+
+
+### 2024/4/16 - v0.0.3
+- Added a feature : snap to nearest node
+
+  <details>
+    <summary>Update</summary>
+    
+    1. Feature : snap to nearest node
+         - A connection will snap to a nearby node once it gets close enough
+    
+    ![5-1](https://github.com/ysj0828/NodeSystem/assets/63217600/e80a0f24-4f98-4a33-8813-9d4d284ab1fa)
+
+  </details>
