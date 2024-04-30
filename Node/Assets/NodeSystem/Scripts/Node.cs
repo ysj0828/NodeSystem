@@ -145,6 +145,7 @@ public class Node : MonoBehaviour, IClickable, IDraggable, IObject
         {
             lastNode.SetIcon();
         }
+        closestNode = m.pointer.RaycastClosestNode(this);
 
         if (closestNode)
         {
