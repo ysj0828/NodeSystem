@@ -71,3 +71,17 @@
 
 
   </details>
+
+
+### 2024/4/30 - v0.0.4
+- 기능 추가 : 근처 노드에 스냅
+
+  <details>
+    <summary>업데이트</summary>
+    
+    1. 기능 : 근처 노드에 스냅
+         - 연결 선을 드래그 중일 때 근처에 노드가 있으면 자동으로 스냅, 멀어지면 다시 커서를 따라감
+    
+    ![5-1](https://github.com/ysj0828/NodeSystem/assets/63217600/e80a0f24-4f98-4a33-8813-9d4d284ab1fa)
+
+  </details>
