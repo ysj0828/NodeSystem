@@ -85,3 +85,18 @@
     ![5-1](https://github.com/ysj0828/NodeSystem/assets/63217600/e80a0f24-4f98-4a33-8813-9d4d284ab1fa)
 
   </details>
+
+
+### 2024/5/15 - v0.1
+- 기능 추가 : 연결 끊기
+
+  <details>
+    <summary>업데이트</summary>
+    
+    1. 기능 : 연결 끊기
+         - 연결 선을 빈 공간으로 드래그하여 연결을 끊는 기능
+    
+    ![6-1](https://github.com/ysj0828/NodeSystem/assets/63217600/7f8febfd-e6a7-4f00-880e-998d57a3af88)
+
+
+  </details>
