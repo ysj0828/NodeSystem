@@ -21,6 +21,9 @@ public class Line
     public Color color;
     public List<Vector2> points;
 
+    public bool CurrentlySelected;
+    public bool NotRemoved;
+
     public Color selectedColor = new Color32(0x7f, 0x5a, 0xf0, 0xff);
     public Color hoverColor = new Color32(0x2c, 0xb6, 0x7d, 0xff);
     public Color defaultColor = new Color32(0xff, 0xff, 0xfe, 0xff);

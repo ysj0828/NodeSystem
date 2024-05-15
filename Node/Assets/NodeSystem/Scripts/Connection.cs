@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class Connection : ISelectable, IClickable, IObject
+public class Connection : ISelectable, IClickable, IObject, IDraggable
 {
     public Node node0;
     public Node node1;
@@ -90,6 +90,8 @@ public class Connection : ISelectable, IClickable, IObject
         }
     }
 
+    public bool EnableDrag { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+
     public void UpdateLine()
     {
         if (lineType == LineTypeEnum.Spline)
@@ -128,15 +130,47 @@ public class Connection : ISelectable, IClickable, IObject
         {
             Deselect();
         }
+
+        if (line.CurrentlySelected)
+        {
+            node0.OnPointerDown();
+            line.NotRemoved = true;
+        }
+
+
     }
 
     public void OnPointerUp()
     {
+        if (line.CurrentlySelected)
+        {
+            if (!line.NotRemoved)
+                line.NotRemoved = true;
+            node0.OnPointerUp();
+        }
+    }
+
+    public void OnDrag()
+    {
+        if (line.NotRemoved)
+        {
+            node0.RemoveConnection(this);
+            node1.RemoveConnection(this);
+            Manager.instance.ConnectionsList.Remove(this);
+
+            // node0.ConnectionLine.points.Clear();
+            // node1.ConnectionLine.points.Clear();
+
+            line.points.Clear();
+            line.NotRemoved = false;
+        }
+        node0.OnDrag();
     }
 
     public void Select()
     {
         line.color = line.selectedColor;
+        line.CurrentlySelected = true;
 
         if (!node0.entity.NodeManager.SelectedObjectList.Contains(this))
         {
@@ -147,6 +181,7 @@ public class Connection : ISelectable, IClickable, IObject
     public void Deselect()
     {
         line.color = line.defaultColor;
+        line.CurrentlySelected = false;
 
         if (node0.entity.NodeManager.SelectedObjectList.Contains(this))
         {

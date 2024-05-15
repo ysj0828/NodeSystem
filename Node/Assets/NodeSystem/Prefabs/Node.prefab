@@ -254,6 +254,24 @@ MonoBehaviour:
   text: {fileID: 7021893952719947896}
   imageCurrentIcon: {fileID: 7021893953752588565}
   ControlPointTranform: {fileID: 7021893952125237663}
+  ConnectionLine:
+    StartCapEnum: 0
+    StartCapSize: 0
+    StartCapColour: {r: 0, g: 0, b: 0, a: 0}
+    StartCapAngleOffset: 0
+    EndCapEnum: 0
+    EndCapSize: 0
+    EndCapColour: {r: 0, g: 0, b: 0, a: 0}
+    EndCapAngleOffset: 0
+    width: 2
+    length: 0
+    color: {r: 1, g: 1, b: 0.99607843, a: 1}
+    points: []
+    CurrentlySelected: 0
+    NotRemoved: 0
+    selectedColor: {r: 0.49803922, g: 0.3529412, b: 0.9411765, a: 1}
+    hoverColor: {r: 0.17254902, g: 0.7137255, b: 0.49019608, a: 1}
+    defaultColor: {r: 1, g: 1, b: 0.99607843, a: 1}
   lastNode: {fileID: 0}
   ConnectionList: []
 --- !u!222 &7021893953794581464

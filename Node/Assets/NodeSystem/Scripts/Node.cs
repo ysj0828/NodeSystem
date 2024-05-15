@@ -42,7 +42,7 @@ public class Node : MonoBehaviour, IClickable, IDraggable, IObject
         }
     }
 
-    Line ConnectionLine;
+    public Line ConnectionLine;
     Spline ConnectionSpline;
     UILineRenderer uiLineRenderer;
 
@@ -129,6 +129,7 @@ public class Node : MonoBehaviour, IClickable, IDraggable, IObject
 
         if (target.HaveSpots && this.HaveSpots)
         {
+            print("add connection");
             c = entity.NodeManager.AddConnection(this, target, entity.NodeManager.GlobalLineType);
             target.SetIcon();
         }
@@ -212,14 +213,17 @@ public class Node : MonoBehaviour, IClickable, IDraggable, IObject
 
         if (closestNode)
         {
+            print("closest node found!");
             closestNode.imageCurrentIcon.color = closestNode.iconColorDefault;
 
             if (nodeType == NodeTypeEnum.input || closestNode.nodeType == NodeTypeEnum.output)
             {
+                print("connect(this)");
                 closestNode.Connect(this);
             }
             else
             {
+                print("connect(closestnode)");
                 Connect(closestNode);
             }
         }
@@ -243,6 +247,14 @@ public class Node : MonoBehaviour, IClickable, IDraggable, IObject
             ConnectionList[i].Remove();
         }
 
+        SetIcon();
+    }
+
+    public void RemoveConnection(Connection c)
+    {
+        print("remove 1");
+        ConnectionList.Remove(c);
+        print("remove 2");
         SetIcon();
     }
 

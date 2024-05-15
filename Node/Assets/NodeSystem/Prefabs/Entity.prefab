@@ -217,6 +217,24 @@ MonoBehaviour:
   text: {fileID: 2142035945025490023}
   imageCurrentIcon: {fileID: 2142035945745881344}
   ControlPointTranform: {fileID: 2142035945644230640}
+  ConnectionLine:
+    StartCapEnum: 0
+    StartCapSize: 0
+    StartCapColour: {r: 0, g: 0, b: 0, a: 0}
+    StartCapAngleOffset: 0
+    EndCapEnum: 0
+    EndCapSize: 0
+    EndCapColour: {r: 0, g: 0, b: 0, a: 0}
+    EndCapAngleOffset: 0
+    width: 2
+    length: 0
+    color: {r: 1, g: 1, b: 0.99607843, a: 1}
+    points: []
+    CurrentlySelected: 0
+    NotRemoved: 0
+    selectedColor: {r: 0.49803922, g: 0.3529412, b: 0.9411765, a: 1}
+    hoverColor: {r: 0.17254902, g: 0.7137255, b: 0.49019608, a: 1}
+    defaultColor: {r: 1, g: 1, b: 0.99607843, a: 1}
   lastNode: {fileID: 0}
   ConnectionList: []
 --- !u!1 &2142035944298496695
@@ -510,6 +528,24 @@ MonoBehaviour:
   text: {fileID: 2142035944010219798}
   imageCurrentIcon: {fileID: 2142035944814375794}
   ControlPointTranform: {fileID: 2142035943704009628}
+  ConnectionLine:
+    StartCapEnum: 0
+    StartCapSize: 0
+    StartCapColour: {r: 0, g: 0, b: 0, a: 0}
+    StartCapAngleOffset: 0
+    EndCapEnum: 0
+    EndCapSize: 0
+    EndCapColour: {r: 0, g: 0, b: 0, a: 0}
+    EndCapAngleOffset: 0
+    width: 2
+    length: 0
+    color: {r: 1, g: 1, b: 0.99607843, a: 1}
+    points: []
+    CurrentlySelected: 0
+    NotRemoved: 0
+    selectedColor: {r: 0.49803922, g: 0.3529412, b: 0.9411765, a: 1}
+    hoverColor: {r: 0.17254902, g: 0.7137255, b: 0.49019608, a: 1}
+    defaultColor: {r: 1, g: 1, b: 0.99607843, a: 1}
   lastNode: {fileID: 0}
   ConnectionList: []
 --- !u!1 &2142035944814375796

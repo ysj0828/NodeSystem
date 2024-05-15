@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 public class Manager : MonoBehaviour
 {
+    public static Manager instance { get; private set; }
+
     List<Entity> entityList;
     public List<Entity> EntityList { get => entityList; }
 
@@ -40,8 +42,6 @@ public class Manager : MonoBehaviour
     public float GlobalCapEndAngleOffset;
 
 
-
-
     private void OnEnable()
     {
         InitLine();
@@ -54,6 +54,10 @@ public class Manager : MonoBehaviour
 
     private void Awake()
     {
+        if (instance != null && instance != this) Destroy(this);
+
+        instance = this;
+
         canvas = GetComponent<Canvas>();
         canvasRectTransform = canvas.GetComponent<RectTransform>();
         pointer = GetComponentInChildren<Pointer>();
@@ -112,6 +116,14 @@ public class Manager : MonoBehaviour
         entityList = new List<Entity>();
         entityList.AddRange(GetComponentsInChildren<Entity>());
     }
+
+    public void RemoveConnection(Node n0, Node n1, Connection c)
+    {
+        n0.ConnectionList.Remove(c);
+        n1.ConnectionList.Remove(c);
+        ConnectionsList.Remove(c);
+    }
+
     public Connection AddConnection(Node n0, Node n1, Connection.LineTypeEnum lineType = Connection.LineTypeEnum.Spline)
     {
         Connection prev = NodesConnected(n0, n1);
@@ -138,6 +150,7 @@ public class Manager : MonoBehaviour
         c.UpdateLine();
         return c;
     }
+
     private Connection CreateConnection(Node n0, Node n1, Connection.LineTypeEnum lineType)
     {
         Connection c = new Connection(n0, n1, lineType);
