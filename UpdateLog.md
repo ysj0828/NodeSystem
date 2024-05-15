@@ -13,7 +13,7 @@
     1. Select an entity by clicking
     2. Drag selected entity
     3. Highlight selected entity
-    4. Click and drag node : render a line in canvas as UI
+    4. Click and drag node : Render a line in canvas as UI
 
     ![1-1](https://github.com/ysj0828/NodeSystem/assets/63217600/312a31f4-ec84-4ba0-ba36-cd841bd5aed0)
 
@@ -45,7 +45,7 @@
     <summary>Bugs</summary>
     
     1. Connected line not being rendered
-    2. Node OnDrag : line not snapping to a node nearby
+    2. Node OnDrag : Line not snapping to a node nearby
 
     ![3-1](https://github.com/ysj0828/NodeSystem/assets/63217600/ba55d38d-23b7-413f-897e-a05b8ce29f52)
 
@@ -67,7 +67,7 @@
   <details>
     <summary>Bugs</summary>
     
-    1. Node OnDrag : line not snapping to a node nearby
+    1. Node OnDrag : Line not snapping to a node nearby
 
     ![4-1](https://github.com/ysj0828/NodeSystem/assets/63217600/123649d7-73c0-4cc9-9e37-3a9785616c78)
 
@@ -76,7 +76,7 @@
 
 
 ### 2024/4/30 - v0.0.4
-- Added a feature : snap to nearest node
+- Added a feature : Snap to nearest node
 
   <details>
     <summary>Update</summary>
@@ -85,5 +85,20 @@
          - A connection will snap to a nearby node once it gets close enough
     
     ![5-1](https://github.com/ysj0828/NodeSystem/assets/63217600/e80a0f24-4f98-4a33-8813-9d4d284ab1fa)
+
+  </details>
+
+
+### 2024/5/15 - v0.1
+- Added a feature : Disconnect a connection
+
+  <details>
+    <summary>Update</summary>
+    
+    1. Feature : Disconnect a connection
+         - A connection can now be disconnected by dragging it to empty space
+    
+    ![6-1](https://github.com/ysj0828/NodeSystem/assets/63217600/7f8febfd-e6a7-4f00-880e-998d57a3af88)
+
 
   </details>
