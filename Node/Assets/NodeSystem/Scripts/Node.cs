@@ -142,6 +142,8 @@ public class Node : MonoBehaviour, IClickable, IDraggable, IObject
     {
         Manager m = entity.NodeManager;
 
+        if (nodeType == NodeTypeEnum.input) return;
+
         if (lastNode)
         {
             lastNode.SetIcon();
