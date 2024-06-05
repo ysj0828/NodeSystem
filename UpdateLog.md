@@ -102,3 +102,15 @@
 
 
   </details>
+
+
+### 2024/6/5 - v0.1.1
+- Updated a feature : Connection
+
+  <details>
+    <summary>Update</summary>
+    
+    1. Feature : Connection
+         - Connections can no longer be initiated from input node
+
+  </details>
