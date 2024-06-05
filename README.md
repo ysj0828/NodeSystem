@@ -5,8 +5,6 @@
 
 <br>
 <br>
-<br>
-<br>
 
 > ### [Update log](./UpdateLog.md)
 
@@ -16,6 +14,8 @@ Node System is a UI Framework to create UI objects that can be visually linked.
 
 There are 6 main modules: Manager, Entity, Node, Connection, Line Renderer and Pointer.
 
+<br>
+<br>
 <br>
 
 > Manager
